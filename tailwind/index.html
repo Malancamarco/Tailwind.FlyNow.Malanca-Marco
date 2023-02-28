@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyNow.com</title>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/244e2535d4.js" crossorigin="anonymous"></script>
+
+
+    <!-- FLOWBITE -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+
+
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
+
+</head>
+<body class="bg-blue-800 mx-10 font-sans">
+  
+  <nav class=" container flex flex-wrap items-center justify-between mx-auto px-5 py-3  bg-white rounded-b-xl border-solid border-4 outline shadow-2xl sticky top-0">
+
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+    
+    <button class="text-left  text-base font-medium justify-start" type="button" data-dropdown-toggle="dropdown">Vola ora<svg class="w-4 h-4 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+    <!-- Dropdown menu -->
+    <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
+        
+        <ul class="py-1" aria-labelledby="dropdown">
+        <li>
+            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Prenota</a>
+        </li>
+        <li>
+            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Checkin</a>
+        </li>
+        <li>
+            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- I miei voli</a>
+        </li>
+        <li>
+            <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Info voli</a>
+        </li>
+        <li>
+          <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Classi di viaggio</a>
+      </li>
+      <li>
+        <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Servizi aggiuntivi</a>
+    </li>
+        </ul>
+    </div>
+    
+    <h1 class="text-center  text-xl font-bold animate-bounce underline text-orange-500 decoration-orange-500 decoration-2 justify-center ">FlyNow</h1>
+
+    <button class="text-left  text-base font-medium justify-start" type="button" data-dropdown-toggle="dropdown">Profilo<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+    
+     <!-- Dropdown menu -->
+     <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4" id="dropdown">
+        
+      <ul class="py-1" aria-labelledby="dropdown">
+      <li>
+          <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Accedi</a>
+      </li>
+      <li>
+          <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Registrati</a>
+      </li>
+      <li>
+          <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">- Servizio clienti</a>
+      </li>
+    
+  </div>
+    
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+    </svg>
+    
+  </nav>
+
+  <header class="mt-12 rounded-xl">
+    <img  class="flex  items-center shadow-2xl rounded-xl outline w-full" src="/sfondo.jpg" alt=""> 
+  <header>
+
+        
+<h3 class=" mt-12 py-3 rounded-lg text-center text-lg font-medium text-white animate-bounce "><i class="fa-solid fa-earth-americas"></i> Prenota il tuo volo ora <i class="fa-solid fa-earth-americas"></i></h3>
+<!-- form -->
+  <div class="flex items-center justify-center p-12 -mt-12 ">
+    <div class="mx-auto w-full lg:max-w-[550px] bg-slate-400 rounded-xl shadow-2xl  outline border-solid border-4 border-white">
+
+      <form action="" method="POST" class="">
+        <div class="-mx-3 flex flex-wrap ">
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="m-5">
+              <label
+                for="fName"
+                class="mb-3 block text-base font-medium text-white"
+              >
+                Da :
+              </label>
+              <input
+                type="text"
+                name="fName"
+                id="fName"
+                placeholder="Aeroporto di partenza"
+                class="w-full rounded-md border border-[#e0e0e0]  bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1]  focus:shadow-md"
+              />
+            </div>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="m-5">
+              <label
+                for="lName"
+                class="mb-3 block text-base font-medium text-white"
+              >
+                A :
+              </label>
+              <input
+                type="text"
+                name="lName"
+                id="lName"
+                placeholder="Areoporto di atterraggio"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="m-5">
+          <label
+            for="guest"
+            class="mb-3 block text-base font-medium text-white"
+          >
+            Passeggeri :
+          </label>
+          <input
+            type="number"
+            name="guest"
+            id="guest"
+            placeholder="Numero di passeggeri"
+            min="0"
+            class="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+          />
+        </div>
+  
+        <div class="-mx-3 flex flex-wrap">
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="m-5">
+              <label
+                for="date"
+                class="mb-3 block text-base font-medium text-white"
+              >
+                Data di partenza :
+              </label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <div class="m-5">
+              <label
+                for="class"
+                class="mb-3 block text-base font-medium text-white"
+              >
+                Classe di volo :
+              </label>
+              <input
+                type="text"
+                name="class"
+                id="class"
+                placeholder="Economy/Bussiness/Premium"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  
+      </form>
+    </div>
+  </div>
+
+  </div>
+  <div class="items-center text-center -mt-8 ">
+    <button class="rounded-lg outline bg-white  ">
+        <h3 class="py-2 px-5 rounded-lg text-center text-base font-medium text-white bg-orange-500 border-solid border-4 border-white   shadow-2xl ">Cerca voli <i class="fa-solid fa-arrow-right"></i></h3>
+
+    </button>
+</div>
+
+
+
+<!--cards-->
+<div class="mx-10 mt-16 flex-auto rounded-lg border-solid border-4 bg-white outline shadow-2xl ">
+  <h3 class=" py-3 rounded-lg text-center text-base font-medium bg-white shadow-2xl">Le migliori offerte in partenza per : </h3>
+</div>
+</div>
+<!--cards group-->
+<div class="-mt-5 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
+
+  <!--Card 1-->
+  <div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60">
+    <img class="w-full" src="/cards/italia.jpg" alt="">
+    <div class="px-6 py-4">
+      <div class="font-bold text-base text-center mb-2"> - Italia - </div>
+      <p class="text-gray-700 text-base">
+        
+      </p>
+    </div>
+  </div>
+
+  <!--Card 2-->
+  <div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60 ">
+    <img class="w-full" src="/cards/francia.jpg" alt="">
+    <div class="px-6 py-4">
+      <div class="font-bold text-base text-center mb-2"> - Francia -</div>
+      <p class="text-gray-700 text-base">
+        
+      </p>
+    </div>
+  </div>
+
+  <!--Card 3-->
+  <div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60">
+    <img class="w-full" src="/cards/austria.jpg" alt="">
+    <div class="px-6 py-4">
+      <div class="font-bold text-base text-center mb-2"> - Austria -</div>
+      <p class="text-gray-700 text-base">
+        
+      </p>
+    </div>
+    
+  </div>
+
+
+
+ <!--Card 4-->
+ <div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60">
+  <img class="w-full" src="/cards/america.jpg" alt="">
+  <div class="px-6 py-4">
+    <div class="font-bold text-base text-center mt-3  mb-2"> - America -</div>
+    <p class="text-gray-700 text-base">
+      
+    </p>
+  </div>
+</div>
+
+
+<!--Card 5-->
+<div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60">
+  <img class="w-full" src="/cards/india.jpg" alt="">
+  <div class="px-6 py-4">
+    <div class="font-bold text-base text-center mb-2"> - India -</div>
+    <p class="text-gray-700 text-base">
+      
+    </p>
+  </div>
+</div>
+<!--Card 6-->
+<div class="overflow-hidden shadow-2xl bg-white rounded-lg border-solid border-4 outline hover:opacity-60">
+  <img class="w-full" src="/cards/giappone.jpg" alt="">
+  <div class="px-6 py-4">
+    <div class="font-bold text-base text-center mb-2"> - Giappone -</div>
+    <p class="text-gray-700 text-base">
+    </p>
+  </div>  
+</div>
+</div>
+</div>
+
+<div class="items-center text-center -mt-6 ">
+  <button class="rounded-lg outline bg-white  ">
+      <h3 class="py-2 px-5 rounded-lg text-center text-base font-medium text-white bg-orange-500 border-solid border-4 border-white 
+      shadow-2xl ">Visualizza altro <i class="fa-solid fa-arrow-right"></i></h3>
+
+  </button>
+</div>
+
+
+
+
+
+  
+
+ 
+  <!--footer-->
+  
+<footer class="container flex flex-wrap items-center justify-between mx-auto rounded-t-xl mt-20 p-4 bg-white md:flex md:items-center md:justify-between md:p-6 shadow-2xl outline border-solid border-4">
+  <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">FlyNow™</a>.     Tutti i diritti riservati.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+      </li>
+      <li>
+          <a href="#" class="mr-4 hover:underline md:mr-6">Licenza</a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline">Contatti</a>
+      </li>
+  </ul>
+</footer>
+
+  
+      
+      
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+<script src="/file.js"></script>
+</body>
+</html>
